@@ -1,0 +1,72 @@
+#container * {
+  box-sizing: border-box; 
+  align-items: center;
+  background: #13acba;
+}
+
+#carousel::-webkit-scrollbar{
+  width: 12px;
+  border: 2px solid #f4f4f4;
+}
+
+#carousel::-webkit-scrollbar-thumb{
+  background: #4d5c66;
+  border-radius: 1rem;
+}
+
+#carousel {
+  height: 560px;
+  width: 447px; 
+  border-radius: 8px;
+  padding: 15px 2%;
+  overflow-y: scroll;
+}
+
+#box {  
+  display: flex;
+  justify-content:space-between; 
+  align-items: center; 
+  outline-offset: 0px;
+  border-radius: 2px ;
+  margin: 10px 0;
+}
+
+#box:hover {
+  border-radius: 5px ;
+  outline: 1px solid #f4f4f4;
+}
+
+#container h1{
+  color: #f4f4f4;;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#container p{  
+  font-weight: bold;  
+  font-size: 20px;
+  text-align: left;
+  width: 400px;
+  padding: auto;
+  margin: 40px;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: left;
+}
+
+#container h2{  
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  height: 43px;
+  width: 162px;
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: bold;    
+}  
+   
+
+       
+
+  
