@@ -54,8 +54,7 @@ img {
 
 .menu {
     display: flex;
-    margin: 0%;
-    
+    margin: 0%; 
 }
 
 .menu li {
@@ -112,9 +111,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    cursor: pointer;   
-    color: #000000;
-    
+    cursor: pointer;
 }
 
 #link01 {
@@ -280,7 +277,6 @@ img {
 /*---------------------------------postagens-recentes----------------------------------*/
 
 .postagens-recentes {
-    position: relative;
     height: 650px;
     width: 1099px;
     margin: 0 auto;
@@ -288,10 +284,11 @@ img {
 }
 
 .postagens-recentes h1{
+    cursor: auto;
     text-align: left;
     color: #4d5c66;
     font-size: 26px;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 .posts {
@@ -302,7 +299,6 @@ img {
 }
 
 .posts article {
-    
     position: block;
     align-items: flex-end;
     height: 407px;
@@ -313,20 +309,14 @@ img {
     box-shadow: 10px 10px 5px 0px #4d5c665f; 
 }
 
+.posts article:hover {
+    transform: scale(1.1);
+}
 .posts img {
     margin-top: 0px;
-    object-fit:center;
+    object-fit:cover;
     height: 240px;
     width: 353px;
-    
-}
-
-.posts img:hover {
-    position: relative;
-    object-fit: cover ;
-    height: 280px;
-    padding-bottom: -10px;
-
 }
 
 .posts article p { 
@@ -352,16 +342,16 @@ img {
 .postagens-recentes button:hover {
     background-color: #4d5c66;
     border: 2px solid #FFFFFF;
+    transform: scale(1.5);
 }
 
 
-.postagens-recentes a {
+.button a {
     color: #4d5c66;
 } 
 
-.postagens-recentes a:hover {
-    color: #4d5c66;
-    color: #FFFFFF;
+.button a:hover {
+    color: #FFFFFF;    
 } 
 
 
@@ -428,7 +418,8 @@ img {
     margin-bottom: 30px; 
 }
 
-.unidades h1{    
+.unidades h1{  
+    cursor: auto;  
     text-align: left;
     color: #4d5c66;
     font-size: 26px;
@@ -567,12 +558,43 @@ form label, form {
 
 }
 
+/*--------------------------------resposividade-----------------------------------*/
 @media (max-width:800px) {
-    .grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        display: block;
-    }
+
+
+
+.header {
+    background-color: #f4f4f4;
+    display: block;
+    justify-content:center; 
+    align-items: center;
+    overflow: auto;
+}
+
+
+
+
+
+.grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    display: block;
+}
+
+.grid > div:nth-child(n + 1) {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+cursor: pointer;   
+}
+
+
+
+
+
+
+
 }
 
 
